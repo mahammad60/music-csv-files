@@ -1,0 +1,10 @@
+import csv, os
+with open("100MostStreamedSongs.csv") as file:
+ reader = csv.DictReader(file)
+ names = ""
+ for rows in reader:
+
+     names = (rows["Artist(s)"]) 
+     songz = (rows["Song"])
+     print(F"{names}, {songz}")
+
